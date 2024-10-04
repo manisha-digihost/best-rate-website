@@ -1,0 +1,128 @@
+.footer{
+    position: relative;
+    .footer-cta{
+        background-color:#000A63;
+        .content{
+            display: inline-flex;
+            padding: 42px 0;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            h3{
+                
+                &.text{
+                    color: #FFF;
+                font-family: $ibrand;
+                font-size: 2.25rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                }
+                &.email{
+                   a{
+                    color: #E2E2E2;
+                    font-family: $urbanist;
+                    font-size: 3.62rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-decoration-line: underline;
+                   }
+                }
+            }
+        }
+    }
+    .footer-liks{
+        background: #000356;
+        padding: 33px 0 10px;
+        .footer-box{
+            h4{
+                color: #FFF;
+                font-family: $urbanist;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
+            ul{
+                li{ 
+                    margin-bottom: 10px;
+                    a{
+                        color: #D3D3D3;
+                        font-family: $urbanist;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                a{
+                    color: #FFF;
+                    font-family: $ibrand;
+                    font-size: 8.75rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                li{
+                    a{
+                        color: #fff;
+                        &.twitter{
+                            span{
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright{
+            display: flex;
+            padding: 15px 0;
+            justify-content: space-between;
+            p{
+                color: #D3D3D3;
+                font-family: $urbanist;
+                font-size: 0.8rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                a{
+                    color: #D3D3D3;
+                    font-family: $urbanist;
+                    font-size: 0.8rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            .term{
+                display: flex;
+                gap: 20px;
+                a{
+                    color: #D3D3D3;
+                    font-family: $urbanist;
+                    font-size: 0.8rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
