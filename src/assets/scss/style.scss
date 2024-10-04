@@ -1,0 +1,17 @@
+@import "bootstrap/dist/css/bootstrap";
+
+// Abstract files
+@import "./abstract/variable";
+
+// Base files
+@import "./base/reset";
+
+// Layout files
+@import "./layout/navbar";
+@import "./layout/footer";
+
+// Components file
+@import "./components/button";
+
+// Pages
+@import "./pages/home";
