@@ -4,6 +4,7 @@ import {
   ExpertyBuild,
   Hero,
   ReadyToExplore,
+  Mission
 } from "../components/HomeComponents";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <DomainName />
       <ExpertyBuild />
       <ReadyToExplore />
+      <Mission />
     </>
   );
 };
