@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/autoplay";
 import readyToExploreVideo from "./../assets/images/ready-to-explore.webm";
+import marqueeBackground from "../assets/images/marque.svg";
 
 export const Hero = () => {
   return (
@@ -380,31 +381,25 @@ export const ReadyToExplore = () => {
   );
 };
 
-export const startSuccess = () => {
+export const StartSuccess = () => {
   return (
     <div className="section start-sucess">
-      <Container fluid>
+      <Container fluid className="px-0">
+        <img src={marqueeBackground} alt="" />
         <marquee>
-          <h4>Start Your Success!</h4>
-          <h4>Start Your Success!</h4>
-          <h4>Start Your Success!</h4>
-          <h4>Start Your Success!</h4>
-          <h4>Start Your Success!</h4>
-          <h4>Start Your Success!</h4>
+          <div className="headings">
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+            <h4>Start Your Success!</h4>
+          </div>
         </marquee>
-      </Container>
-    </div>
-  );
-};
-
-// Here's the Peeps, Who Vouch for Us
-export const vouchForUs = () => {
-  return (
-    <div className="section start-sucess">
-      <Container>
-        <h2 className="heading">
-          Ready to Explore? Our Latest <br /> Innovations
-        </h2>
       </Container>
     </div>
   );

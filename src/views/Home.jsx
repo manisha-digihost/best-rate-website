@@ -4,8 +4,7 @@ import {
   ExpertyBuild,
   Hero,
   ReadyToExplore,
-  startSuccess,
-  vouchForUs,
+  StartSuccess,
 } from "../components/HomeComponents";
 
 const Home = () => {
@@ -15,9 +14,7 @@ const Home = () => {
       <DomainName />
       <ExpertyBuild />
       <ReadyToExplore />
-      <startSuccess />
-      <vouchForUs />
-      {/* <Mission /> */}
+      <StartSuccess />
     </>
   );
 };

@@ -258,10 +258,27 @@
 
 // Start Sucess
 .start-sucess {
+  position: relative;
   marquee {
-    display: flex;
-    gap: 15px;
-    padding: 10px 0;
-    background: url(./../../images/marque.svg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 4;
+    .headings {
+      width: 100%;
+      display: flex;
+      gap: 15px;
+      padding: 10px 0;
+      h4 {
+        color: #fff;
+        font-family: $ibrand;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
   }
 }
