@@ -5,12 +5,14 @@ import Footer from "./layouts/Footer";
 import { Cta } from "./layouts/Cta";
 import { Blogsection } from "./layouts/Cta";
 import { Oneclick } from "./layouts/Cta";
+import VouchForUs from "./layouts/VouchForUs";
 
 function App() {
   return (
     <>
       <Navbar />
       <Home />
+      <VouchForUs />
       <Oneclick/>
       <Blogsection/>
       <Cta/>
