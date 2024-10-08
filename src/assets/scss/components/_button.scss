@@ -10,6 +10,13 @@
   border: 1px solid;
   overflow: hidden;
   position: relative;
+  text-align: center;
+  font-family: $urbanist;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
   
   cursor: pointer;
   position: relative;
@@ -24,15 +31,22 @@
     position: absolute;
     top: -50px;
     transform: rotate(35deg);
-    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
     width: 50px;
     z-index: 1;
   }
-  &:hover { text-decoration: none;
+  &:hover { 
+    text-decoration: none;
     &:after {
       left: 120%;
-      transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
-    } }
+      transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+    } 
+  }
 
-  
+}
+.btn-2{
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.48px;
 }
