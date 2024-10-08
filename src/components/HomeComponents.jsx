@@ -353,16 +353,24 @@ export const ReadyToExplore = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <div className="video-slide">
+                  <video src={readyToExploreVideo} autoPlay muted loop></video>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <div className="video-slide">
+                  <video src={readyToExploreVideo} autoPlay muted loop></video>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <div className="video-slide">
+                  <video src={readyToExploreVideo} autoPlay muted loop></video>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                <div className="video-slide">
+                  <video src={readyToExploreVideo} autoPlay muted loop></video>
+                </div>
               </SwiperSlide>
             </Swiper>
           </Col>
