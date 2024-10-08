@@ -78,10 +78,10 @@
     .blog-heading {
       color: $dark;
       font-family: $ibrand;
-      font-size: 3.1rem;
+      font-size: 3rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 66px; /* 126.923% */
+      line-height: 60px; /* 126.923% */
       letter-spacing: 1.04px;
     }
     .blog-img-container {
@@ -97,9 +97,13 @@
         overflow: hidden;
         position: relative;
         &.side-blog {
-          // height: 100%;
-
-          // width: 100%;
+            a{
+                .title{
+                    h4{
+                        -webkit-line-clamp:unset
+                    }
+                }
+            }
         }
         a {
           height: 100%;
@@ -145,8 +149,8 @@
           }
           .arrow {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 15px;
+            right: 15px;
             background: $light;
             width: 40px;
             height: 40px;
@@ -213,7 +217,7 @@
       z-index: 1;
       display: flex;
       align-items: end;
-      gap: 40px;
+      gap: 70px;
       .oneday {
         height: 100%;
         img {
@@ -221,15 +225,15 @@
         }
       }
       .oneclick-para {
-        max-width: 600px;
+        max-width: 550px;
 
         p {
           color: $light;
           font-family: $ibrand;
-          font-size: 56px;
+          font-size: 3rem;
           font-style: normal;
           font-weight: 400;
-          line-height: 64px; /* 114.286% */
+          line-height: 60px; /* 114.286% */
           letter-spacing: 1.12px;
           text-transform: capitalize;
         }

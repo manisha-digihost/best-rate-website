@@ -67,7 +67,7 @@ export const Blogsection = () =>{
                               <a href="#!">
                               <img src={blog3} alt="" />
                                 <div className="title">
-                                    <h4>Personalization in Digital Marketing: Strategies and Tools...</h4>
+                                    <h4>Role of Artificial Intelligence in Digital Marketing: Opportunities and Challenges in India </h4>
                                 </div>
                                 <div className="arrow">
                                     <FaArrowUpLong />
