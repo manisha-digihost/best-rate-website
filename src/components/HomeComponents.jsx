@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import domainVideo from "./../assets/images/domain.mp4";
 // import Swiper from "swiper";
@@ -109,6 +109,11 @@ export const ExpertyBuild = () => {
 
 export const ReadyToExplore = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    // To ensure this runs only on the client side
+    setIsMounted(true);
+  }, []);
 
   return (
     <div className="section ready-to-explore">
@@ -336,48 +341,75 @@ export const ReadyToExplore = () => {
             </Swiper>
           </Col>
           <Col sm={7}>
-            <Swiper
-              style={{
-                "--swiper-navigation-color": "#fff",
-                "--swiper-pagination-color": "#fff",
-              }}
-              loop={true}
-              spaceBetween={10}
-              // navigation={true}
-              autoplay={{
-                delay: 3000, // 3 seconds delay between slides
-                disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
-              }}
-              thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
-              modules={[Autoplay, FreeMode, Navigation, Thumbs]}
-              className="navslider"
-            >
-              <SwiperSlide>
-                <div className="video-slide">
-                  <video src={readyToExploreVideo} autoPlay muted loop></video>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="video-slide">
-                  <video src={readyToExploreVideo} autoPlay muted loop></video>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="video-slide">
-                  <video src={readyToExploreVideo} autoPlay muted loop></video>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="video-slide">
-                  <video src={readyToExploreVideo} autoPlay muted loop></video>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="video-slide">
-                  <video src={readyToExploreVideo} autoPlay muted loop></video>
-                </div>
-              </SwiperSlide>
-            </Swiper>
+            {isMounted && (
+              <Swiper
+                style={{
+                  "--swiper-navigation-color": "#fff",
+                  "--swiper-pagination-color": "#fff",
+                }}
+                loop={true}
+                spaceBetween={10}
+                // navigation={true}
+                autoplay={{
+                  delay: 3000, // 3 seconds delay between slides
+                  disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
+                }}
+                thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
+                modules={[Autoplay, FreeMode, Navigation, Thumbs]}
+                className="navslider"
+              >
+                <SwiperSlide>
+                  <div className="video-slide">
+                    <video
+                      src={readyToExploreVideo}
+                      autoPlay
+                      muted
+                      loop
+                    ></video>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="video-slide">
+                    <video
+                      src={readyToExploreVideo}
+                      autoPlay
+                      muted
+                      loop
+                    ></video>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="video-slide">
+                    <video
+                      src={readyToExploreVideo}
+                      autoPlay
+                      muted
+                      loop
+                    ></video>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="video-slide">
+                    <video
+                      src={readyToExploreVideo}
+                      autoPlay
+                      muted
+                      loop
+                    ></video>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="video-slide">
+                    <video
+                      src={readyToExploreVideo}
+                      autoPlay
+                      muted
+                      loop
+                    ></video>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            )}
           </Col>
         </Row>
       </Container>
