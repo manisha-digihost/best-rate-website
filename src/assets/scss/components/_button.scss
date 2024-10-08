@@ -1,11 +1,38 @@
 .button {
-  display: inline-flex;
   padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   color: $light;
   border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: $gradient;
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+  
+  cursor: pointer;
+  position: relative;
 
+ 
+  &:after {
+    background: $primary;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
+  }
+  &:hover { text-decoration: none;
+    &:after {
+      left: 120%;
+      transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+    } }
+
+  
 }
