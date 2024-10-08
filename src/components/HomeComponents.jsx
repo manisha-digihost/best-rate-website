@@ -344,8 +344,12 @@ export const ReadyToExplore = () => {
               loop={true}
               spaceBetween={10}
               // navigation={true}
+              autoplay={{
+                delay: 3000, // 3 seconds delay between slides
+                disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
+              }}
               thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
-              modules={[FreeMode, Navigation, Thumbs]}
+              modules={[Autoplay, FreeMode, Navigation, Thumbs]}
               className="navslider"
             >
               <SwiperSlide>
