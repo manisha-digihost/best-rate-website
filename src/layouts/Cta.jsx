@@ -24,7 +24,6 @@ export const Cta = () => {
       )
 }
 
-
 export const Blogsection = () =>{
    return(
     <div className="section blogsection">
