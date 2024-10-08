@@ -13,15 +13,15 @@ import VideoBtn from '../assets/images/video/video-btn.svg';
 
 // Sample video data
 const videos = [
-  { id: 1, title: 'Video 1', url: 'src/assets/images/video/video-1.mp4', adminName: 'Carol Glover', adminDesignation: 'CEO' },
-  { id: 2, title: 'Video 2', url: 'src/assets/images/video/video-2.mp4', adminName: 'John Doe', adminDesignation: 'CTO' },
-  { id: 3, title: 'Video 3', url: 'src/assets/images/video/video-3.mp4', adminName: 'Jane Smith', adminDesignation: 'CMO' },
-  { id: 4, title: 'Video 4', url: 'src/assets/images/video/video-1.mp4', adminName: 'Mike Johnson', adminDesignation: 'CFO' },
-  { id: 5, title: 'Video 5', url: 'src/assets/images/video/video-2.mp4', adminName: 'Emily Davis', adminDesignation: 'COO' },
-  { id: 6, title: 'Video 6', url: 'src/assets/images/video/video-3.mp4', adminName: 'Chris Lee', adminDesignation: 'CMO' },
-  { id: 7, title: 'Video 7', url: 'src/assets/images/video/video-1.mp4', adminName: 'Pat Brown', adminDesignation: 'CTO' },
-  { id: 8, title: 'Video 8', url: 'src/assets/images/video/video-2.mp4', adminName: 'Olivia Wilson', adminDesignation: 'CEO' },
-  { id: 9, title: 'Video 9', url: 'src/assets/images/video/video-3.mp4', adminName: 'Liam Smith', adminDesignation: 'CFO' }
+  { id: 1, title: 'Video 1', url: '/src/assets/images/video/video-1.mp4', adminName: 'Carol Glover', adminDesignation: 'CEO' },
+  { id: 2, title: 'Video 2', url: '/src/assets/images/video/video-2.mp4', adminName: 'John Doe', adminDesignation: 'CTO' },
+  { id: 3, title: 'Video 3', url: '/src/assets/images/video/video-3.mp4', adminName: 'Jane Smith', adminDesignation: 'CMO' },
+  { id: 4, title: 'Video 4', url: '/src/assets/images/video/video-1.mp4', adminName: 'Mike Johnson', adminDesignation: 'CFO' },
+  { id: 5, title: 'Video 5', url: '/src/assets/images/video/video-2.mp4', adminName: 'Emily Davis', adminDesignation: 'COO' },
+  { id: 6, title: 'Video 6', url: '/src/assets/images/video/video-3.mp4', adminName: 'Chris Lee', adminDesignation: 'CMO' },
+  { id: 7, title: 'Video 7', url: '/src/assets/images/video/video-1.mp4', adminName: 'Pat Brown', adminDesignation: 'CTO' },
+  { id: 8, title: 'Video 8', url: '/src/assets/images/video/video-2.mp4', adminName: 'Olivia Wilson', adminDesignation: 'CEO' },
+  { id: 9, title: 'Video 9', url: '/src/assets/images/video/video-3.mp4', adminName: 'Liam Smith', adminDesignation: 'CFO' }
 ];
 
 const VouchForUs = () => {
