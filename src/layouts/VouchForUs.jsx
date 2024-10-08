@@ -126,7 +126,7 @@ const VouchForUs = () => {
   };
 
   return (
-    <div className="section start-sucess">
+    <div className="section vouch-for-us">
       <Container fluid className="p-lg-0">
         <h2 className="heading">
           Here's the Peeps, Who <br /> Vouch for Us
