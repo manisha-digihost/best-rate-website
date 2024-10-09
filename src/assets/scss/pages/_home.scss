@@ -234,7 +234,7 @@
   }
   .thumbslider {
     .swiper-slide {
-      height: 8vh !important;
+      height: 70px !important;
       border-radius: 15px;
       overflow: hidden;
       transition: 0.5s all ease;
@@ -243,11 +243,10 @@
         display: flex;
         align-items: start;
         gap: 15px;
-        padding: 15px;
+        padding: 20px;
         z-index: 3;
         position: relative;
         border-radius: 15px;
-        // padding-bottom: 22px;
         height: 98.5%;
 
         .icon {
@@ -260,7 +259,7 @@
         .text {
           h4 {
             color: #111;
-            font-size: 1.5vw;
+            font-size: 20px;
             font-weight: bold;
             @media (max-width: $lg-breakpoint) {
               font-size: 20px;
@@ -268,7 +267,7 @@
           }
           p {
             color: #232323;
-            font-size: 1vw;
+            font-size: 14px;
             font-weight: 500;
             margin-top: 10px;
             opacity: 0;
@@ -291,7 +290,7 @@
         background: $gradient;
       }
       &.swiper-slide-thumb-active.swiper-slide-visible {
-        height: 21.5vh !important;
+        height: 138px !important;
         background: #ededed;
         .thumb {
           background: #ededed;
