@@ -94,19 +94,13 @@ export const ExpertyBuild = () => {
     <div className="section experty-build">
       <Container fluid className="px-0">
         <div className="cta-heading">
-          <a href="#!">
           <h4>Expertly Build Website</h4>
-          </a>
         </div>
         <div className="cta-heading">
-          <a href="#!">
           <h4>Build by experts</h4>
-          </a>
         </div>
         <div className="cta-heading">
-         <a href="#!">
-         <h4>Delivered within 24hrs</h4>
-         </a>
+          <h4>Delivered within 24hrs</h4>
         </div>
       </Container>
     </div>
