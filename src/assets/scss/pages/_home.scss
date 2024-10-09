@@ -488,6 +488,7 @@
         color: $tertiary;
         font-size: 22px;
         line-height: 22px;
+        transition:all 0.5s ease-in-out;
 
         &::after{
           content: "...";
@@ -521,6 +522,11 @@
     right: 40px;
     top: 20px;
     z-index: 999;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      transform: rotate(180deg);
+    }
   }
 
   video {
