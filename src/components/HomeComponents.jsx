@@ -130,7 +130,7 @@ export const ReadyToExplore = () => {
               slidesPerView={5}
               direction="vertical"
               autoplay={{
-                delay: 3000, // 3 seconds delay between slides
+                delay: 5000, // 3 seconds delay between slides
                 disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
               }}
               freeMode={true}
@@ -351,7 +351,7 @@ export const ReadyToExplore = () => {
                 spaceBetween={10}
                 // navigation={true}
                 autoplay={{
-                  delay: 3000, // 3 seconds delay between slides
+                  delay: 5000, // 3 seconds delay between slides
                   disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
                 }}
                 thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
