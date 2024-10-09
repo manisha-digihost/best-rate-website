@@ -94,13 +94,19 @@ export const ExpertyBuild = () => {
     <div className="section experty-build">
       <Container fluid className="px-0">
         <div className="cta-heading">
-          <a href="#"><h4>Expertly Build Website</h4></a>
+          <a href="#">
+            <h4>Expertly Build Website</h4>
+          </a>
         </div>
         <div className="cta-heading">
-        <a href="#"><h4>Build by experts</h4></a>
+          <a href="#">
+            <h4>Build by experts</h4>
+          </a>
         </div>
         <div className="cta-heading">
-        <a href="#"><h4>Delivered within 24hrs</h4></a>
+          <a href="#">
+            <h4>Delivered within 24hrs</h4>
+          </a>
         </div>
       </Container>
     </div>
@@ -129,10 +135,10 @@ export const ReadyToExplore = () => {
               spaceBetween={10}
               slidesPerView={5}
               direction="vertical"
-              autoplay={{
-                delay: 5000, // 3 seconds delay between slides
-                disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
-              }}
+              // autoplay={{
+              //   delay: 5000, // 3 seconds delay between slides
+              //   disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
+              // }}
               freeMode={true}
               watchSlidesProgress={true}
               modules={[Autoplay, FreeMode, Navigation, Thumbs]}
@@ -350,10 +356,10 @@ export const ReadyToExplore = () => {
                 loop={true}
                 spaceBetween={10}
                 // navigation={true}
-                autoplay={{
-                  delay: 5000, // 3 seconds delay between slides
-                  disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
-                }}
+                // autoplay={{
+                //   delay: 5000, // 3 seconds delay between slides
+                //   disableOnInteraction: false, // Autoplay won't stop after user interactions like clicking or swiping
+                // }}
                 thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
                 modules={[Autoplay, FreeMode, Navigation, Thumbs]}
                 className="navslider"
