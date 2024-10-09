@@ -261,8 +261,15 @@
       align-items: center;
       border-radius: 50%;
       rotate: 40deg;
+      transition: all .3s linear;
       svg {
         fill: #001f63;
+      }
+    }
+    &:hover{
+      cursor: pointer;
+      .arrow {
+        rotate: 90deg;
       }
     }
   }
