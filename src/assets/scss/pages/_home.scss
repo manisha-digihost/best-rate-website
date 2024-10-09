@@ -327,7 +327,7 @@
   margin-top: 3rem;
 
   .Vouch_slider{
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   .swiper-slide {
@@ -403,11 +403,17 @@
     }
 
     &.swiper-slide-active{
+      height: calc(420 / 14.4 * 1rem) !important;
+      transition: height .9s ease-in-out ;
       .videoSlider_videoWrap{
         opacity: 1;
-        height: calc(425 / 14.4 * 1rem);
       }
     }
+  }
+
+  .swiper-wrapper{
+    display: flex;
+    align-items: center;
   }
 
   .videoSlider_cornerWrap{
@@ -420,6 +426,7 @@
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    padding-top: 5px;
 
     .videoSlider_corners {
       display: flex;
@@ -443,6 +450,52 @@
                   linear-gradient(to top, #5C00F3 calc(2 / var(--gfs) * 1rem), transparent calc(1 / var(--gfs) * 1rem)) 100% 100%;
       background-repeat: no-repeat;
       background-size: calc(12 / var(--gfs)* 1rem) calc(12 / var(--gfs)* 1rem);
+    }
+  }
+
+  .custom-pagination{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    transition:all 0.5s ease-in-out;
+
+
+    .pagination-item {
+      color: $dark;
+      text-align: center;
+      font-family: $urbanist;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 14px;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      display: inline-block;
+
+      &::after{
+        content: "...";
+        width: 17px;
+        height: 22px;
+        font-size: 25px;
+        line-height: 22px;
+        position: absolute;
+        bottom: 0px;
+      }
+
+      &.active{
+        color: $tertiary;
+        font-size: 22px;
+        line-height: 22px;
+
+        &::after{
+          content: "...";
+          color: $dark;
+        }
+      }
+
+      
     }
   }
 }

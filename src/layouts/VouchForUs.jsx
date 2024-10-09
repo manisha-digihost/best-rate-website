@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Container, Modal } from "react-bootstrap";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+// Import Swiper modules
 import { Pagination } from "swiper/modules";
 
 import VideoBtn from "../assets/images/video/video-btn.svg";
@@ -86,6 +87,7 @@ const VouchForUs = () => {
   const [scale, setScale] = useState(1); // State to manage scaling
   const [showModal, setShowModal] = useState(false); // State to manage modal visibility
   const [currentVideo, setCurrentVideo] = useState(""); // State to store the current video URL
+  const [currentIndex, setCurrentIndex] = useState(0); // State to store the current slide index
 
   // Handle video playback based on the active slide
   const handleSlideChange = (swiper) => {
@@ -106,11 +108,14 @@ const VouchForUs = () => {
       activeVideo.play();
     }
 
+    // Update the current index based on the active index
+    setCurrentIndex(swiper.realIndex); // Use realIndex instead of activeIndex
+
     // Scale the corners on slide change
     setScale(1.051);
     setTimeout(() => {
       setScale(1); // Reset scale after 300ms (or any duration you prefer)
-    }, 800);
+    }, 600);
   };
 
   // Open modal with the current video
@@ -125,6 +130,25 @@ const VouchForUs = () => {
     setCurrentVideo(""); // Reset the video source
   };
 
+  // Helper function to display paginated items centered
+  const getVisiblePagination = () => {
+    const total = videos.length;
+    const visiblePagination = [];
+    const itemsToShow = 5; // Number of pagination items to display (centered view)
+    const middleIndex = Math.floor(itemsToShow / 2);
+
+    for (let i = -middleIndex; i <= middleIndex; i++) {
+      let index = currentIndex + i;
+      if (index < 0) {
+        index = total + index; // Wrap around to the end of the list
+      } else if (index >= total) {
+        index = index - total; // Wrap around to the start of the list
+      }
+      visiblePagination.push(index);
+    }
+    return visiblePagination;
+  };
+
   return (
     <div className="section vouch-for-us">
       <Container fluid className="p-lg-0">
@@ -136,11 +160,8 @@ const VouchForUs = () => {
             slidesPerView={1.8}
             spaceBetween={30}
             centeredSlides={true}
-            speed={700}
+            // speed={700}
             loop={true}
-            pagination={{
-              clickable: true,
-            }}
             modules={[Pagination]}
             className="Vouch_slider"
             onSlideChange={handleSlideChange}
@@ -174,6 +195,21 @@ const VouchForUs = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          {/* Custom Pagination */}
+          <div className="custom-pagination">
+            {getVisiblePagination().map((index, paginationIndex) => (
+              <span
+                key={paginationIndex}
+                className={`pagination-item ${
+                  currentIndex === index ? "active" : ""
+                }`}
+              >
+                {String(index + 1).padStart(2, "0")}
+              </span>
+            ))}
+          </div>
+
           <div className="videoSlider_cornerWrap">
             <div
               className="videoSlider_corners global_corners"
